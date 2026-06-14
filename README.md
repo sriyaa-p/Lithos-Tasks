@@ -1,5 +1,7 @@
 <<<<<<< HEAD
+
 # Lithos-Tasks
+
 Lithos Tasks is a geology-themed task management application built using React, TypeScript, Vite, and Tailwind CSS.
 
 The project began as an experiment to explore how AI-assisted design could be combined with software engineering. I initially used Motion AI and AI agents to generate and prototype the landing page and visual interactions. From there, I iterated on the design and transformed it into a fully functional web application with task management features.
@@ -44,7 +46,7 @@ A production-grade React 18 + TypeScript + Vite + Tailwind CSS application.
 
 ---
 
-##  Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -64,7 +66,7 @@ Ensure you have **Node.js** (v18+ or v20+ recommended) and **npm** installed.
 
 ---
 
-##  Available Scripts
+## Available Scripts
 
 Run the following commands in the project root:
 
@@ -83,7 +85,7 @@ Run the following commands in the project root:
 
 ---
 
-##  Testing Guide
+## Testing Guide
 
 ### Unit & Component Tests
 
@@ -111,9 +113,8 @@ npm run test:e2e
 
 ---
 
-##  Deployment
+## Deployment
 
-This project contains a `vercel.json` file configured for SPA routing. You can connect this repository to Vercel for automatic deployment on every push to the main branch.
-=======
+# This project contains a `vercel.json` file configured for SPA routing. You can connect this repository to Vercel for automatic deployment on every push to the main branch.
 
->>>>>>> 851dec927cf85cfdcddbe823f9c6f1424af28bd9
+> > > > > > > 851dec927cf85cfdcddbe823f9c6f1424af28bd9

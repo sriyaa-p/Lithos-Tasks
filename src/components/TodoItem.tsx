@@ -62,7 +62,10 @@ export function TodoItem({ todo, onToggle, onEdit, onDelete }: TodoItemProps) {
               : `Mark "${todo.title}" as complete`
           }
         >
-          <Check size={14} className={todo.completed ? 'opacity-100' : 'opacity-0'} />
+          <Check
+            size={14}
+            className={todo.completed ? 'opacity-100' : 'opacity-0'}
+          />
         </button>
 
         {/* Text / Editing Input */}

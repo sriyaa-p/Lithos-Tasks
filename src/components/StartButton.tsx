@@ -1,4 +1,3 @@
-
 export interface StartButtonProps {
   onClick?: () => void
   label?: string

@@ -23,7 +23,9 @@ describe('TodoItem Component', () => {
       />,
     )
     expect(screen.getByText('Drill core sample')).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: /edit task/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', { name: /edit task/i }),
+    ).toBeInTheDocument()
     expect(
       screen.getByRole('button', { name: /delete task/i }),
     ).toBeInTheDocument()

@@ -12,7 +12,9 @@ test.describe('TODO Dashboard E2E tests', () => {
     await page.goto('/')
 
     // Find the input and button
-    const input = page.locator('input[placeholder*="Add a new geological task"]')
+    const input = page.locator(
+      'input[placeholder*="Add a new geological task"]',
+    )
     const submitButton = page.getByRole('button', { name: /submit new task/i })
 
     // Type and submit
@@ -29,7 +31,9 @@ test.describe('TODO Dashboard E2E tests', () => {
   test('should add multiple tasks', async ({ page }) => {
     await page.goto('/')
 
-    const input = page.locator('input[placeholder*="Add a new geological task"]')
+    const input = page.locator(
+      'input[placeholder*="Add a new geological task"]',
+    )
     const submitButton = page.getByRole('button', { name: /submit new task/i })
 
     // Add first task
@@ -48,7 +52,9 @@ test.describe('TODO Dashboard E2E tests', () => {
   test('should complete a task by clicking the checkbox', async ({ page }) => {
     await page.goto('/')
 
-    const input = page.locator('input[placeholder*="Add a new geological task"]')
+    const input = page.locator(
+      'input[placeholder*="Add a new geological task"]',
+    )
     const submitButton = page.getByRole('button', { name: /submit new task/i })
 
     // Add a task
@@ -72,7 +78,9 @@ test.describe('TODO Dashboard E2E tests', () => {
   test('should edit a task by double-clicking', async ({ page }) => {
     await page.goto('/')
 
-    const input = page.locator('input[placeholder*="Add a new geological task"]')
+    const input = page.locator(
+      'input[placeholder*="Add a new geological task"]',
+    )
     const submitButton = page.getByRole('button', { name: /submit new task/i })
 
     // Add a task
@@ -104,7 +112,9 @@ test.describe('TODO Dashboard E2E tests', () => {
   test('should delete a task', async ({ page }) => {
     await page.goto('/')
 
-    const input = page.locator('input[placeholder*="Add a new geological task"]')
+    const input = page.locator(
+      'input[placeholder*="Add a new geological task"]',
+    )
     const submitButton = page.getByRole('button', { name: /submit new task/i })
 
     // Add a task
@@ -127,7 +137,9 @@ test.describe('TODO Dashboard E2E tests', () => {
   test('should filter tasks (All, Active, Completed)', async ({ page }) => {
     await page.goto('/')
 
-    const input = page.locator('input[placeholder*="Add a new geological task"]')
+    const input = page.locator(
+      'input[placeholder*="Add a new geological task"]',
+    )
     const submitButton = page.getByRole('button', { name: /submit new task/i })
 
     // Add two tasks
@@ -138,7 +150,9 @@ test.describe('TODO Dashboard E2E tests', () => {
     await submitButton.click()
 
     // Get the checkbox buttons and complete the second task
-    const checkboxButtons = page.locator('li[data-testid="todo-item"] button').first()
+    const checkboxButtons = page
+      .locator('li[data-testid="todo-item"] button')
+      .first()
     await checkboxButtons.click()
 
     // All filter - should show both
@@ -161,7 +175,9 @@ test.describe('TODO Dashboard E2E tests', () => {
   test('should search for tasks', async ({ page }) => {
     await page.goto('/')
 
-    const input = page.locator('input[placeholder*="Add a new geological task"]')
+    const input = page.locator(
+      'input[placeholder*="Add a new geological task"]',
+    )
     const submitButton = page.getByRole('button', { name: /submit new task/i })
 
     // Add multiple tasks
@@ -196,7 +212,9 @@ test.describe('TODO Dashboard E2E tests', () => {
   test('should clear all completed tasks', async ({ page }) => {
     await page.goto('/')
 
-    const input = page.locator('input[placeholder*="Add a new geological task"]')
+    const input = page.locator(
+      'input[placeholder*="Add a new geological task"]',
+    )
     const submitButton = page.getByRole('button', { name: /submit new task/i })
 
     // Add tasks - they will be added in reverse order (newest first)
@@ -242,7 +260,9 @@ test.describe('TODO Dashboard E2E tests', () => {
   }) => {
     await page.goto('/')
 
-    const input = page.locator('input[placeholder*="Add a new geological task"]')
+    const input = page.locator(
+      'input[placeholder*="Add a new geological task"]',
+    )
     const submitButton = page.getByRole('button', { name: /submit new task/i })
 
     // Add a task
@@ -261,7 +281,9 @@ test.describe('TODO Dashboard E2E tests', () => {
   test('should display task count', async ({ page }) => {
     await page.goto('/')
 
-    const input = page.locator('input[placeholder*="Add a new geological task"]')
+    const input = page.locator(
+      'input[placeholder*="Add a new geological task"]',
+    )
     const submitButton = page.getByRole('button', { name: /submit new task/i })
 
     // Initially should show "0 tasks remaining"
@@ -298,7 +320,9 @@ test.describe('TODO Dashboard E2E tests', () => {
   }) => {
     await page.goto('/')
 
-    const input = page.locator('input[placeholder*="Add a new geological task"]')
+    const input = page.locator(
+      'input[placeholder*="Add a new geological task"]',
+    )
 
     // Type some text
     await input.fill('This will be cleared')
@@ -315,7 +339,9 @@ test.describe('TODO Dashboard E2E tests', () => {
   }) => {
     await page.goto('/')
 
-    const input = page.locator('input[placeholder*="Add a new geological task"]')
+    const input = page.locator(
+      'input[placeholder*="Add a new geological task"]',
+    )
 
     // Type and press Enter
     await input.fill('Task added with Enter')
@@ -331,7 +357,9 @@ test.describe('TODO Dashboard E2E tests', () => {
   test('should prevent adding empty tasks', async ({ page }) => {
     await page.goto('/')
 
-    const input = page.locator('input[placeholder*="Add a new geological task"]')
+    const input = page.locator(
+      'input[placeholder*="Add a new geological task"]',
+    )
     const submitButton = page.getByRole('button', { name: /submit new task/i })
 
     // Try to add empty task with spaces
@@ -346,7 +374,9 @@ test.describe('TODO Dashboard E2E tests', () => {
   test('should update task count when tasks are cleared', async ({ page }) => {
     await page.goto('/')
 
-    const input = page.locator('input[placeholder*="Add a new geological task"]')
+    const input = page.locator(
+      'input[placeholder*="Add a new geological task"]',
+    )
     const submitButton = page.getByRole('button', { name: /submit new task/i })
 
     // Add tasks
@@ -357,7 +387,9 @@ test.describe('TODO Dashboard E2E tests', () => {
     await submitButton.click()
 
     // Complete both
-    const checkboxes = page.locator('li[data-testid="todo-item"] button').first()
+    const checkboxes = page
+      .locator('li[data-testid="todo-item"] button')
+      .first()
     await checkboxes.click()
 
     const secondCheckbox = page

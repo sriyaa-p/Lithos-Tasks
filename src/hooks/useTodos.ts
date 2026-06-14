@@ -26,7 +26,9 @@ export function useTodos() {
     const trimmed = title.trim()
     if (!trimmed) return
     const newTodo: Todo = {
-      id: crypto.randomUUID ? crypto.randomUUID() : Math.random().toString(36).substring(2, 9),
+      id: crypto.randomUUID
+        ? crypto.randomUUID()
+        : Math.random().toString(36).substring(2, 9),
       title: trimmed,
       completed: false,
       createdAt: Date.now(),

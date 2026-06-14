@@ -1,8 +1,35 @@
+<<<<<<< HEAD
+# Lithos-Tasks
+Lithos Tasks is a geology-themed task management application built using React, TypeScript, Vite, and Tailwind CSS.
+
+The project began as an experiment to explore how AI-assisted design could be combined with software engineering. I initially used Motion AI and AI agents to generate and prototype the landing page and visual interactions. From there, I iterated on the design and transformed it into a fully functional web application with task management features.
+
+Inspired by geological landscapes, the interface includes a cursor-following spotlight effect built using HTML5 Canvas and CSS masking to create an immersive user experience. Beyond the visual design, users can create, search, filter, and manage tasks through a responsive and accessible interface.
+
+The application was developed using a component-based React architecture with TypeScript strict mode and includes automated testing using Vitest and Playwright. The project also incorporates deployment-ready configuration and follows accessibility and responsive design principles.
+
+**Tech Stack**
+React 18
+TypeScript
+Vite
+Tailwind CSS v4
+Vitest
+Playwright
+Lucide React
+HTML5 Canvas
+**What I Learned**
+Building reusable React components and custom hooks
+Managing application state effectively
+Creating advanced UI interactions using Canvas and CSS masking
+Writing unit and end-to-end tests
+Working with AI-assisted development tools while validating, debugging, and refining generated code
+Converting an AI-generated prototype into a production-ready application
+
 # Lithos
 
 A production-grade React 18 + TypeScript + Vite + Tailwind CSS application.
 
-## 🚀 Features & Tech Stack
+## Features & Tech Stack
 
 - **Framework**: [React 18](https://react.dev/)
 - **Build Tool**: [Vite](https://vite.dev/)
@@ -17,7 +44,7 @@ A production-grade React 18 + TypeScript + Vite + Tailwind CSS application.
 
 ---
 
-## 🛠️ Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -37,7 +64,7 @@ Ensure you have **Node.js** (v18+ or v20+ recommended) and **npm** installed.
 
 ---
 
-## 💻 Available Scripts
+##  Available Scripts
 
 Run the following commands in the project root:
 
@@ -56,7 +83,7 @@ Run the following commands in the project root:
 
 ---
 
-## 🧪 Testing Guide
+##  Testing Guide
 
 ### Unit & Component Tests
 
@@ -84,6 +111,9 @@ npm run test:e2e
 
 ---
 
-## ☁️ Deployment
+##  Deployment
 
 This project contains a `vercel.json` file configured for SPA routing. You can connect this repository to Vercel for automatic deployment on every push to the main branch.
+=======
+
+>>>>>>> 851dec927cf85cfdcddbe823f9c6f1424af28bd9

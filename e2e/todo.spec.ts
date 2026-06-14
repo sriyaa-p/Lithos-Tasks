@@ -235,6 +235,8 @@ test.describe('TODO Dashboard E2E tests', () => {
     // Complete Task 1 and Task 2 (but not Task 3)
     const allTaskElements = page.locator('li[data-testid="todo-item"]')
     const itemCount = await allTaskElements.count()
+    
+    expect(itemCount).toBeGreaterThan(0)
 
     // Mark Task 1 as complete by finding it and clicking its checkbox
     const task1 = page.getByText('Task 1').locator('xpath=ancestor::li')

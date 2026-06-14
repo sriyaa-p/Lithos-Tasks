@@ -24,7 +24,10 @@ Object.defineProperty(window, 'localStorage', {
 
 // Mock crypto.randomUUID
 if (!globalThis.crypto) {
-  globalThis.crypto = {} as any
+  Object.defineProperty(globalThis, 'crypto', {
+    value: {},
+    writable: true,
+  })
 }
 if (!globalThis.crypto.randomUUID) {
   globalThis.crypto.randomUUID = () => {

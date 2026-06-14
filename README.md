@@ -116,5 +116,5 @@ npm run test:e2e
 ## Deployment
 
 # This project contains a `vercel.json` file configured for SPA routing. You can connect this repository to Vercel for automatic deployment on every push to the main branch.
-
+>>>>>>>
 

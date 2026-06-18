@@ -1,5 +1,4 @@
 
-
 # Lithos-Tasks
 
 Lithos Tasks is a geology-themed task management application built using React, TypeScript, Vite, and Tailwind CSS.
@@ -10,6 +9,14 @@ Inspired by geological landscapes, the interface includes a cursor-following spo
 
 The application was developed using a component-based React architecture with TypeScript strict mode and includes automated testing using Vitest and Playwright. The project also incorporates deployment-ready configuration and follows accessibility and responsive design principles.
 
+## Ongoing Development
+
+Lithos Tasks is an active personal project that I continue to develop and improve on a regular basis. I use it as a platform to experiment with new ideas, strengthen my frontend engineering skills, and explore modern development workflows.
+
+My goal is to gradually evolve Lithos from a task management application into a fully featured and polished productivity platform. I typically dedicate time each weekend to adding new features, refining the user experience, improving performance, expanding test coverage, and incorporating lessons learned from real-world software development.
+
+Planned areas of exploration include enhanced task organization, user authentication, data persistence, collaboration features, productivity insights, and additional accessibility improvements. Through this iterative approach, the project serves as both a practical learning experience and a long-term effort to build a production-ready web application.
+
 **Tech Stack**
 React 18
 TypeScript
@@ -19,7 +26,7 @@ Vitest
 Playwright
 Lucide React
 HTML5 Canvas
-**What I Learned**
+**What I Learned Till Now**
 Building reusable React components and custom hooks
 Managing application state effectively
 Creating advanced UI interactions using Canvas and CSS masking
@@ -116,5 +123,3 @@ npm run test:e2e
 ## Deployment
 
 # This project contains a `vercel.json` file configured for SPA routing. You can connect this repository to Vercel for automatic deployment on every push to the main branch.
-
-

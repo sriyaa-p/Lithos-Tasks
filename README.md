@@ -1,4 +1,3 @@
-
 # Lithos-Tasks
 
 Lithos Tasks is a geology-themed task management application built using React, TypeScript, Vite, and Tailwind CSS.
